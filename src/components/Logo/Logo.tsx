@@ -1,8 +1,8 @@
-import styles from "./Logo.module.css"
+import { HStack } from "@chakra-ui/react"
 
 export const Logo = () => {
     return (
-        <h1 className={styles.logo}>
+        <HStack fontSize="4xl">
             <span role="img" aria-label="metal hand emoji">
                 🤘
             </span>
@@ -12,6 +12,6 @@ export const Logo = () => {
             <span role="img" aria-label="musical notes emoji">
                 🎶
             </span>
-        </h1>
+        </HStack>
     )
 }

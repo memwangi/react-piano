@@ -2,14 +2,16 @@ import React from "react";
 import { Footer } from "./components/Footer";
 import { Logo } from "./components/Logo";
 import styles from "./App.module.css"
+import { Main } from "./components/Main/Main";
+import { VStack } from "@chakra-ui/react";
 
 export const App = () => {
   return (
-    <div className={styles.app}>
+    <VStack spacing={2}>
       <Logo />
-      <main className={styles.content}/>
+      <Main />
       <Footer/>      
-    </div>
+    </VStack>
   )
 }
 
